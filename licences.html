@@ -1,0 +1,1715 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#080b10">
+<title>Licences &amp; Credits — MICROWAVE//SAMPLER</title>
+<meta name="description" content="Open-source software licences, third-party acknowledgements and individual visualizer preset creator credits for MICROWAVE//SAMPLER.">
+<style>
+:root{--bg:#080b10;--panel:#0e141d;--panel2:#111a26;--text:#eef2f7;--muted:#8d9bad;--line:#24344b;--blue:#00cfff;--green:#d9ff3f}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.5}body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.16;background:linear-gradient(rgba(255,255,255,.02) 1px,transparent 1px);background-size:100% 4px}a{color:inherit}.wrap{max-width:1120px;margin:auto;padding:0 22px}header{position:sticky;top:0;z-index:10;background:rgba(8,11,16,.95);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font:900 19px 'Courier New',monospace;letter-spacing:.075em;text-decoration:none}.brand span{color:var(--blue)}.back{font:700 10px 'Courier New',monospace;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;color:var(--muted)}.back:hover{color:var(--blue)}main{padding:76px 0 100px}.eyebrow{font:11px 'Courier New',monospace;letter-spacing:.16em;color:var(--muted);text-transform:uppercase}.hero{padding:0 0 46px;border-bottom:1px solid var(--line);margin-bottom:52px}.hero h1{font-size:clamp(42px,8vw,82px);line-height:.9;letter-spacing:-.07em;margin:18px 0 22px}.hero h1 em{font:italic 400 1em Georgia,serif;letter-spacing:-.07em}.hero p{max-width:800px;color:#b9c0c9;font-size:16px}.count{display:inline-flex;margin-top:22px;border:1px solid var(--line);padding:9px 12px;color:var(--blue);font:700 10px 'Courier New',monospace;letter-spacing:.1em}.section{margin:54px 0}.section h2{font-size:clamp(26px,4vw,38px);letter-spacing:-.05em;margin:8px 0}.section-intro{color:var(--muted);max-width:850px;font-size:14px;margin:0 0 22px}.components{display:grid;grid-template-columns:1fr 1fr;gap:12px}.component{background:var(--panel);border:1px solid var(--line);padding:20px;min-width:0}.component h3{font:700 15px 'Courier New',monospace;letter-spacing:.03em;margin:0 0 8px}.component p{font-size:13px;color:var(--muted);margin:0}.component-top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}.tag{border:1px solid rgba(0,207,255,.35);color:var(--blue);padding:5px 8px;font:700 9px 'Courier New',monospace;letter-spacing:.08em;white-space:nowrap}.component-meta{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;border-top:1px solid var(--line);padding-top:13px;margin-top:16px;font-size:11px;color:var(--muted)}.component-meta a{color:var(--blue);text-decoration:none}.component-note{margin-top:12px!important;color:#b5c2d0!important;font-size:12px!important}.note-panel{border:1px solid var(--line);background:var(--panel);padding:18px 20px;margin:18px 0;color:#b9c5d2;font-size:13px}.note-panel strong{color:var(--text)}.confirm-note{display:flex;flex-wrap:wrap;gap:10px 22px;background:var(--panel);border-left:2px solid var(--blue);padding:13px 16px;margin:18px 0;color:#c9d4e0;font-size:13px}.confirm-note strong{color:var(--blue);font-family:'Courier New',monospace;font-size:11px;letter-spacing:.06em}.preset-tools{display:flex;gap:12px;align-items:center;margin:18px 0}.preset-tools input{width:100%;background:var(--panel);border:1px solid var(--line);color:var(--text);padding:13px 14px;font:13px 'Courier New',monospace;outline:none}.preset-tools input:focus{border-color:var(--blue)}.table-wrap{overflow:auto;border:1px solid var(--line);background:var(--panel)}table{width:100%;border-collapse:collapse;font-size:13px;min-width:820px}th{text-align:left;background:var(--panel2);color:var(--blue);font:700 10px 'Courier New',monospace;letter-spacing:.1em;text-transform:uppercase}th,td{padding:12px 15px;border-bottom:1px solid var(--line);vertical-align:top}tr:last-child td{border-bottom:0}.ordinal{width:54px;color:var(--muted);font:11px 'Courier New',monospace}.preset-name{font-weight:700;color:var(--text)}td:nth-child(3){color:#aeb9c7}.source-pill{display:inline-block;padding:4px 7px;border:1px solid var(--line);font:9px 'Courier New',monospace;letter-spacing:.04em;color:#b9c4d1;white-space:nowrap}.source-mit{border-color:rgba(0,207,255,.3);color:var(--blue)}.source-imported{border-color:rgba(217,255,63,.24);color:#d5e89c}.license-detail{border:1px solid var(--line);background:var(--panel);margin:10px 0}.license-detail summary{cursor:pointer;list-style:none;padding:17px 18px;font:700 11px 'Courier New',monospace;letter-spacing:.05em;display:flex;align-items:center;justify-content:space-between;gap:20px}.license-detail summary::-webkit-details-marker{display:none}.license-detail summary:hover{color:var(--blue)}.expand{font-size:18px;color:var(--blue)}.license-detail[open] .expand{transform:rotate(45deg)}.detail-body{padding:0 18px 18px}.detail-note{color:var(--muted);font-size:12px}.license-text{white-space:pre-wrap;overflow-wrap:anywhere;background:#080c12;border:1px solid #1c293a;padding:16px;color:#b8c4d3;font:11px/1.65 'Courier New',monospace;max-height:520px;overflow:auto}.footnote{font-size:12px;color:var(--muted);max-width:900px}.footer{border-top:1px solid var(--line);padding:28px 0 50px;color:var(--muted);font:10px 'Courier New',monospace;letter-spacing:.1em;text-transform:uppercase}.footer a{color:var(--blue);text-decoration:none}@media(max-width:760px){.components{grid-template-columns:1fr}.component-top{display:block}.tag{display:inline-block;margin-top:12px}.nav{height:auto;min-height:64px}.section-head{display:block}main{padding-top:54px}}@media(max-width:480px){.wrap{padding:0 15px}.hero h1{font-size:44px}.preset-tools{display:block}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html">MICROWAVE<span>//</span>SAMPLER</a>
+    <a class="back" href="index.html">← Back to website</a>
+  </div>
+</header>
+<main>
+<div class="wrap">
+  <section class="hero">
+    <div class="eyebrow">OPEN SOURCE / THIRD-PARTY ACKNOWLEDGEMENTS</div>
+    <h1>LICENCES <em>&amp; CREDITS</em></h1>
+    <p>MICROWAVE//SAMPLER is built with the work of open-source developers, audio engineers, visual artists and preset creators. This page acknowledges the third-party software and creative contributions included in the application.</p>
+    <div class="count">ANDROID PROJECT AUDIT · 07 NOVEMBER 2026 · 87 ACTIVE VISUALIZER PRESETS</div>
+  </section>
+
+  <section class="section">
+    <div class="eyebrow">01 / AUDIO &amp; DSP</div>
+    <h2>Audio engines &amp; processing</h2>
+    <p class="section-intro">These libraries and implementations support audio time-stretching, native stem separation, audio decoding, encoding and sample-rate conversion.</p>
+    <div class="components">
+    <article class="component">
+      <div class="component-top">
+        <div><h3>Signalsmith Stretch · Web Audio / WebAssembly build</h3><p>The application&#x27;s audio time-stretching and pitch-processing engine.</p></div>
+        <span class="tag">MIT</span>
+      </div>
+      <div class="component-meta"><span>© 2022 Geraint Luff / Signalsmith Audio Ltd.</span><span><a href="https://github.com/Signalsmith-Audio/signalsmith-stretch" target="_blank" rel="noopener noreferrer">Source</a></span></div>
+    </article>
+    <article class="component">
+      <div class="component-top">
+        <div><h3>Signalsmith Linear · support library</h3><p>FFT and linear-processing helpers used by Signalsmith Stretch.</p></div>
+        <span class="tag">MIT</span>
+      </div>
+      <div class="component-meta"><span>© 2025 Signalsmith Audio</span><span><a href="https://github.com/Signalsmith-Audio/linear" target="_blank" rel="noopener noreferrer">Source</a></span></div>
+    </article>
+    <article class="component">
+      <div class="component-top">
+        <div><h3>HT-Demucs v4 / demucs.cpp · native C++ inference</h3><p>Native stem-separation implementation used for drums, bass, vocals and instruments.</p></div>
+        <span class="tag">MIT</span>
+      </div>
+      <div class="component-meta"><span>© Meta Platforms, Inc. and affiliates; © 2023 Sevag H</span><span><a href="https://github.com/sevagh/demucs.cpp" target="_blank" rel="noopener noreferrer">Source</a></span></div>
+    </article>
+    <article class="component">
+      <div class="component-top">
+        <div><h3>Eigen · v3.4.90</h3><p>C++ linear algebra and tensor operations used by the native separation engine. The bundled Eigen distribution includes additional BSD, Apache and MINPACK notices where applicable.</p></div>
+        <span class="tag">MPL 2.0</span>
+      </div>
+      <div class="component-meta"><span>Eigen project and contributors</span><span><a href="https://eigen.tuxfamily.org/" target="_blank" rel="noopener noreferrer">Source</a></span></div>
+    </article>
+    <article class="component">
+      <div class="component-top">
+        <div><h3>libnyquist · native audio I/O</h3><p>Audio decoding and WAV encoding used by the native audio pipeline.</p></div>
+        <span class="tag">BSD 2-Clause</span>
+      </div>
+      <div class="component-meta"><span>© 2019 Dimitri Diakopoulos</span><span><a href="https://github.com/ddiakopoulos/libnyquist" target="_blank" rel="noopener noreferrer">Source</a></span></div>
+    </article>
+    <article class="component">
+      <div class="component-top">
+        <div><h3>FLAC · codec</h3><p>Lossless FLAC audio decoding, included through libnyquist.</p></div>
+        <span class="tag">BSD 3-Clause</span>
+      </div>
+      <div class="component-meta"><span>© Josh Coalson; Xiph.Org Foundation</span><span><a href="https://xiph.org/flac/" target="_blank" rel="noopener noreferrer">Source</a></span></div>
+    </article>
+    <article class="component">
+      <div class="component-top">
+        <div><h3>Opus · codec</h3><p>Opus audio codec support included through libnyquist.</p></div>
+        <span class="tag">BSD 3-Clause</span>
+      </div>
+      <div class="component-meta"><span>© Xiph.Org, Skype Limited and listed contributors</span><span><a href="https://opus-codec.org/" target="_blank" rel="noopener noreferrer">Source</a></span></div>
+    </article>
+    <article class="component">
+      <div class="component-top">
+        <div><h3>libVorbis · codec</h3><p>Vorbis audio decoding included through libnyquist.</p></div>
+        <span class="tag">BSD 3-Clause</span>
+      </div>
+      <div class="component-meta"><span>© Xiph.org Foundation</span><span><a href="https://xiph.org/vorbis/" target="_blank" rel="noopener noreferrer">Source</a></span></div>
+    </article>
+    <article class="component">
+      <div class="component-top">
+        <div><h3>libOgg · container</h3><p>Ogg container support included through libnyquist.</p></div>
+        <span class="tag">BSD 3-Clause</span>
+      </div>
+      <div class="component-meta"><span>© 2002 Xiph.org Foundation</span><span><a href="https://xiph.org/ogg/" target="_blank" rel="noopener noreferrer">Source</a></span></div>
+    </article>
+    <article class="component">
+      <div class="component-top">
+        <div><h3>Musepack · codec</h3><p>Musepack audio decoding included through libnyquist.</p></div>
+        <span class="tag">BSD 3-Clause</span>
+      </div>
+      <div class="component-meta"><span>© 2005 The Musepack Development Team</span><span><a href="https://www.musepack.net/" target="_blank" rel="noopener noreferrer">Source</a></span></div>
+    </article>
+    <article class="component">
+      <div class="component-top">
+        <div><h3>WavPack · codec</h3><p>WavPack audio decoding included through libnyquist.</p></div>
+        <span class="tag">BSD 3-Clause</span>
+      </div>
+      <div class="component-meta"><span>© 1998–2015 Conifer Software</span><span><a href="https://www.wavpack.com/" target="_blank" rel="noopener noreferrer">Source</a></span></div>
+    </article>
+    <article class="component">
+      <div class="component-top">
+        <div><h3>minimp3 · MP3 decoder</h3><p>Small MP3 decoding implementation included through libnyquist.</p></div>
+        <span class="tag">CC0 1.0</span>
+      </div>
+      <div class="component-meta"><span>lieff/minimp3 contributors · CC0 dedication</span><span><a href="https://github.com/lieff/minimp3" target="_blank" rel="noopener noreferrer">Source</a></span></div>
+    </article>
+    <article class="component">
+      <div class="component-top">
+        <div><h3>Android Open Source Project Resampler · sample-rate conversion</h3><p>The standalone resampler source copied from the Oboe project; the app does not link the full Oboe library.</p></div>
+        <span class="tag">Apache 2.0</span>
+      </div>
+      <div class="component-meta"><span>© 2019–2022 The Android Open Source Project</span><span><a href="https://github.com/google/oboe" target="_blank" rel="noopener noreferrer">Source</a></span></div>
+    </article></div>
+  </section>
+
+  <section class="section">
+    <div class="eyebrow">02 / VISUALIZER &amp; GRAPHICS</div>
+    <h2>Visualizer &amp; graphics</h2>
+    <p class="section-intro">The visualizer is powered by Butterchurn, a WebGL implementation of MilkDrop, with Three.js used for 3D rendering.</p>
+    <div class="components">
+    <article class="component">
+      <div class="component-top">
+        <div><h3>Butterchurn · 2.6.7</h3><p>WebGL implementation of the MilkDrop music visualizer.</p></div>
+        <span class="tag">MIT</span>
+      </div>
+      <div class="component-meta"><span>© 2013–2018 Jordan Berg</span><span><a href="https://github.com/jberg/butterchurn" target="_blank" rel="noopener noreferrer">Source</a></span></div>
+    </article>
+    <article class="component">
+      <div class="component-top">
+        <div><h3>Butterchurn Presets · 2.4.7</h3><p>Preset package used for a subset of the 87 active visualizer presets.</p></div>
+        <span class="tag">MIT</span>
+      </div>
+      <div class="component-meta"><span>© 2013–2018 Jordan Berg</span><span><a href="https://github.com/jberg/butterchurn-presets" target="_blank" rel="noopener noreferrer">Source</a></span></div>
+    </article>
+    <article class="component">
+      <div class="component-top">
+        <div><h3>Three.js · 0.170.0</h3><p>3D rendering library used by the visualizer&#x27;s background and scene effects.</p></div>
+        <span class="tag">MIT</span>
+      </div>
+      <div class="component-meta"><span>© 2010–2024 Three.js Authors</span><span><a href="https://threejs.org/" target="_blank" rel="noopener noreferrer">Source</a></span></div>
+    </article>
+    <article class="component">
+      <div class="component-top">
+        <div><h3>Emscripten runtime · generated with Signalsmith Stretch</h3><p>JavaScript/WebAssembly loader and runtime code included in the Signalsmith Stretch Web Audio bundle.</p></div>
+        <span class="tag">MIT / UIUC-NCSA</span>
+      </div>
+      <div class="component-meta"><span>© 2010–2014 Emscripten authors</span><span><a href="https://emscripten.org/" target="_blank" rel="noopener noreferrer">Source</a></span></div>
+    </article></div>
+    <div class="note-panel"><strong>MilkDrop acknowledgement.</strong> MilkDrop was originally created by Ryan Geiss. Thank you to Ryan Geiss, Nullsoft and the wider MilkDrop community whose visualizer work and preset creations helped inspire this part of MICROWAVE//SAMPLER. Butterchurn is the WebGL visualizer implementation used by the app.</div>
+  </section>
+
+  <section class="section">
+    <div class="eyebrow">03 / ANDROID APPLICATION</div>
+    <h2>Android libraries</h2>
+    <p class="section-intro">The following direct Android application dependencies are declared in the current Gradle project. They are distributed under the Apache License 2.0.</p>
+    <div class="components">
+    <article class="component">
+      <div class="component-top">
+        <div><h3>AndroidX Activity KTX · 1.13.0</h3><p>Android activity integration and Kotlin extensions.</p></div>
+        <span class="tag">Apache 2.0</span>
+      </div>
+      <div class="component-meta"><span>AndroidX contributors</span><span><a href="https://developer.android.com/jetpack/androidx" target="_blank" rel="noopener noreferrer">Source</a></span></div>
+    </article>
+    <article class="component">
+      <div class="component-top">
+        <div><h3>AndroidX AppCompat · 1.6.1</h3><p>Android compatibility application and UI support.</p></div>
+        <span class="tag">Apache 2.0</span>
+      </div>
+      <div class="component-meta"><span>AndroidX contributors</span><span><a href="https://developer.android.com/jetpack/androidx" target="_blank" rel="noopener noreferrer">Source</a></span></div>
+    </article>
+    <article class="component">
+      <div class="component-top">
+        <div><h3>AndroidX ConstraintLayout · 2.1.4</h3><p>Android layout engine.</p></div>
+        <span class="tag">Apache 2.0</span>
+      </div>
+      <div class="component-meta"><span>AndroidX contributors</span><span><a href="https://developer.android.com/jetpack/androidx" target="_blank" rel="noopener noreferrer">Source</a></span></div>
+    </article>
+    <article class="component">
+      <div class="component-top">
+        <div><h3>AndroidX Core KTX · 1.19.1</h3><p>Core AndroidX APIs and Kotlin extensions.</p></div>
+        <span class="tag">Apache 2.0</span>
+      </div>
+      <div class="component-meta"><span>AndroidX contributors</span><span><a href="https://developer.android.com/jetpack/androidx" target="_blank" rel="noopener noreferrer">Source</a></span></div>
+    </article>
+    <article class="component">
+      <div class="component-top">
+        <div><h3>AndroidX WebKit · 1.13.0</h3><p>WebView support, including WebViewAssetLoader integration.</p></div>
+        <span class="tag">Apache 2.0</span>
+      </div>
+      <div class="component-meta"><span>AndroidX contributors</span><span><a href="https://developer.android.com/jetpack/androidx" target="_blank" rel="noopener noreferrer">Source</a></span></div>
+    </article>
+    <article class="component">
+      <div class="component-top">
+        <div><h3>Google Material Components · 1.10.0</h3><p>Material Design Android UI components.</p></div>
+        <span class="tag">Apache 2.0</span>
+      </div>
+      <div class="component-meta"><span>Google and contributors</span><span><a href="https://github.com/material-components/material-components-android" target="_blank" rel="noopener noreferrer">Source</a></span></div>
+    </article>
+    <article class="component">
+      <div class="component-top">
+        <div><h3>Kotlin Standard Library · transitive runtime dependency</h3><p>Kotlin runtime support pulled in by AndroidX Kotlin extensions.</p></div>
+        <span class="tag">Apache 2.0</span>
+      </div>
+      <div class="component-meta"><span>JetBrains and Kotlin contributors</span><span><a href="https://github.com/JetBrains/kotlin" target="_blank" rel="noopener noreferrer">Source</a></span></div>
+    </article></div>
+    <p class="footnote">JUnit, AndroidX Test and Espresso are declared only as test dependencies. Gradle and the Android Gradle Plugin are build tools. They are not included as runtime application components and are not listed as app features here.</p>
+  </section>
+
+  <section class="section">
+    <div class="eyebrow">04 / TYPEFACES</div>
+    <h2>Fonts</h2>
+    <p class="section-intro">These font files and their SIL Open Font License notices are bundled in the Android project assets.</p>
+    <div class="components">
+    <article class="component">
+      <div class="component-top">
+        <div><h3>JetBrains Mono · variable font</h3><p>Bundled monospaced typeface.</p></div>
+        <span class="tag">SIL OFL 1.1</span>
+      </div>
+      <div class="component-meta"><span>© 2020 The JetBrains Mono Project Authors</span><span><a href="https://github.com/JetBrains/JetBrainsMono" target="_blank" rel="noopener noreferrer">Source</a></span></div>
+    </article>
+    <article class="component">
+      <div class="component-top">
+        <div><h3>Plus Jakarta Sans · variable font</h3><p>Bundled font asset. The project contains the font file and its OFL notice.</p></div>
+        <span class="tag">SIL OFL 1.1</span>
+      </div>
+      <div class="component-meta"><span>© 2020 The Plus Jakarta Sans Project Authors</span><span><a href="https://github.com/tokotype/PlusJakartaSans" target="_blank" rel="noopener noreferrer">Source</a></span></div>
+    </article>
+    <article class="component">
+      <div class="component-top">
+        <div><h3>Space Grotesk · variable font</h3><p>Bundled display typeface.</p></div>
+        <span class="tag">SIL OFL 1.1</span>
+      </div>
+      <div class="component-meta"><span>© 2020 The Space Grotesk Project Authors</span><span><a href="https://github.com/floriankarsten/space-grotesk" target="_blank" rel="noopener noreferrer">Source</a></span></div>
+    </article></div>
+  </section>
+
+  <section class="section">
+    <div class="eyebrow">05 / VISUALIZER ARTISTS</div>
+    <h2>87 preset creator credits</h2>
+    <p class="section-intro">A thank-you to the visual artists and preset authors whose work appears in the current MICROWAVE//SAMPLER visualizer. The list below follows the same case-insensitive locale sorting used by the in-app preset browser. Creator names and collaborations are preserved from the preset titles where available.</p>
+    
+<div class="confirm-note">
+  <strong>Confirmed in-app positions:</strong>
+  <span>#27 — Aderrasi · Circle Facade</span>
+  <span>#78 — Mstress · Colorrain</span>
+</div>
+<p class="footnote">Two other active preset files are literally titled “27” and “78”. Those are separate entries (currently positions #17 and #19); their own preset titles do not identify a creator.</p>
+
+    <div class="note-panel"><strong>Preset source distinction.</strong> The app's own preset metadata identifies 22 active entries as coming from Butterchurn Presets 2.4.7 (MIT) and 65 as coming from a separate converted MilkDrop preset archive. The supplied converted archive does not contain a separate licence notice. Those 65 entries are shown here for creator attribution only; they are not represented as covered by the Butterchurn Presets package licence. Inactive historical/legacy preset collections found in the project are not included in this 87-preset list.</div>
+    <div class="preset-tools"><input id="presetSearch" type="search" placeholder="Search preset or creator…" aria-label="Search preset credits"></div>
+    <div class="table-wrap">
+      <table id="presetTable">
+        <thead><tr><th>#</th><th>Preset</th><th>Creator credit</th><th>Source</th></tr></thead>
+        <tbody><tr><td class="ordinal">01</td><td class="preset-name">_Flexi - mindblob [where it′s at now]</td><td>Flexi</td><td><span class="source-pill source-mit">Butterchurn Presets 2.4.7</span></td></tr><tr><td class="ordinal">02</td><td class="preset-name">_Geiss - Explosion Mod 1</td><td>Geiss</td><td><span class="source-pill source-mit">Butterchurn Presets 2.4.7</span></td></tr><tr><td class="ordinal">03</td><td class="preset-name">_Geiss - Explosion Mod 2b</td><td>Geiss</td><td><span class="source-pill source-mit">Butterchurn Presets 2.4.7</span></td></tr><tr><td class="ordinal">04</td><td class="preset-name">_Geiss - Myriad Mosaics --TEST--</td><td>Geiss</td><td><span class="source-pill source-mit">Butterchurn Presets 2.4.7</span></td></tr><tr><td class="ordinal">05</td><td class="preset-name">_Geiss - Skin Dots Multi-layer 3 (mashup 2)</td><td>Geiss</td><td><span class="source-pill source-mit">Butterchurn Presets 2.4.7</span></td></tr><tr><td class="ordinal">06</td><td class="preset-name">_Mig_004</td><td>Mig</td><td><span class="source-pill source-mit">Butterchurn Presets 2.4.7</span></td></tr><tr><td class="ordinal">07</td><td class="preset-name">_Mig_120</td><td>Mig</td><td><span class="source-pill source-mit">Butterchurn Presets 2.4.7</span></td></tr><tr><td class="ordinal">08</td><td class="preset-name">_Mig_Oscilloscope_010</td><td>Mig</td><td><span class="source-pill source-mit">Butterchurn Presets 2.4.7</span></td></tr><tr><td class="ordinal">09</td><td class="preset-name">_Mig_Oscilloscope002</td><td>Mig</td><td><span class="source-pill source-mit">Butterchurn Presets 2.4.7</span></td></tr><tr><td class="ordinal">10</td><td class="preset-name">_Mig_Oscilloscope008</td><td>Mig</td><td><span class="source-pill source-mit">Butterchurn Presets 2.4.7</span></td></tr><tr><td class="ordinal">11</td><td class="preset-name">_Mig_Oscilloscope021</td><td>Mig</td><td><span class="source-pill source-mit">Butterchurn Presets 2.4.7</span></td></tr><tr><td class="ordinal">12</td><td class="preset-name">(Ishan)-radicalizingmybraincells</td><td>Ishan</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">13</td><td class="preset-name">(Ishan)-soulamplifier</td><td>Ishan</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">14</td><td class="preset-name">(Ishan)-soulamplifier(unrealremix)</td><td>Ishan (remix designation retained in title)</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">15</td><td class="preset-name">[Ishan] - Drug Addict (Jelly V3)</td><td>Ishan (Jelly V3 version designation)</td><td><span class="source-pill source-mit">Butterchurn Presets 2.4.7</span></td></tr><tr><td class="ordinal">16</td><td class="preset-name">111malalol+bdrv + al krash &amp; yin + phat - electric universe of the continuum belt v3_crazynessmix_4b</td><td>111malalol, bdrv, Al Krash, yin &amp; phat</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">17</td><td class="preset-name">27</td><td>Creator not identified in the preset title</td><td><span class="source-pill source-mit">Butterchurn Presets 2.4.7</span></td></tr><tr><td class="ordinal">18</td><td class="preset-name">3Dragons-dragonflydreams</td><td>3Dragons</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">19</td><td class="preset-name">78</td><td>Creator not identified in the preset title</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">20</td><td class="preset-name">Aberration + 68_Lightspeed - Rainbow_Serpent</td><td>Aberration &amp; 68_Lightspeed</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">21</td><td class="preset-name">aberration x AkashaDude &amp; Geiss -True Psi_j</td><td>Aberration, AkashaDude &amp; Geiss</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">22</td><td class="preset-name">Aderrasi - Airhandler (Pulse Voice Mix)</td><td>Aderrasi</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">23</td><td class="preset-name">Aderrasi - Antidote</td><td>Aderrasi</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">24</td><td class="preset-name">Aderrasi - Antidote (Side Effects Mix)</td><td>Aderrasi</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">25</td><td class="preset-name">Aderrasi - Antique Waving And Shaking</td><td>Aderrasi</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">26</td><td class="preset-name">Aderrasi - Cause and Effort</td><td>Aderrasi</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">27</td><td class="preset-name">Aderrasi - Circle Facade</td><td>Aderrasi</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">28</td><td class="preset-name">Aderrasi - Core without Corruption</td><td>Aderrasi</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">29</td><td class="preset-name">Aderrasi - Graft (First Rate Heart)</td><td>Aderrasi</td><td><span class="source-pill source-mit">Butterchurn Presets 2.4.7</span></td></tr><tr><td class="ordinal">30</td><td class="preset-name">Aderrasi - Gridster</td><td>Aderrasi</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">31</td><td class="preset-name">Aderrasi - Kevlar</td><td>Aderrasi</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">32</td><td class="preset-name">Aderrasi - Kevlar Blast Chamber</td><td>Aderrasi</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">33</td><td class="preset-name">Aderrasi - Making Time</td><td>Aderrasi</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">34</td><td class="preset-name">Aderrasi - Sounds Red</td><td>Aderrasi</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">35</td><td class="preset-name">Amandio C - bossa city bw</td><td>Amandio C</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">36</td><td class="preset-name">beta106i - Drains (Mobile)</td><td>beta106i</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">37</td><td class="preset-name">beta106i - Potion of Smoke</td><td>beta106i</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">38</td><td class="preset-name">beta106Random - Turbulence Sandwich</td><td>beta106Random</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">39</td><td class="preset-name">Blank - Idiot beat code</td><td>Blank (preset title also names Idiot)</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">40</td><td class="preset-name">Bmelgren &amp; Krash - Rainbow Reflection (Collisions on the Chain of Life)</td><td>Bmelgren &amp; Krash</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">41</td><td class="preset-name">Cope-WIP - Strange Attractor 2</td><td>Cope-WIP</td><td><span class="source-pill source-mit">Butterchurn Presets 2.4.7</span></td></tr><tr><td class="ordinal">42</td><td class="preset-name">Dbleja - Blue - Hovering over Neptune</td><td>Dbleja</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">43</td><td class="preset-name">Dbleja - White - Amongst the Spirits</td><td>Dbleja</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">44</td><td class="preset-name">Electricalsurge</td><td>Electricalsurge</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">45</td><td class="preset-name">EMPR - Random - Maximum Tesselazzzions</td><td>EMPR</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">46</td><td class="preset-name">Esotic - Going Up</td><td>Esotic</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">47</td><td class="preset-name">Esotic - Gullet 1.1</td><td>Esotic</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">48</td><td class="preset-name">Esotic and Krash - JazzMouth</td><td>Esotic &amp; Krash</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">49</td><td class="preset-name">Esotic and Krash - Marching Rot</td><td>Esotic &amp; Krash</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">50</td><td class="preset-name">EvilJim - #23 Chaos of Lines</td><td>EvilJim</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">51</td><td class="preset-name">EvilJim - #42 Spectrum Analyzer</td><td>EvilJim</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">52</td><td class="preset-name">fiShbRaiN - blueprint</td><td>fiShbRaiN</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">53</td><td class="preset-name">fiShbRaiN - crystal glasses</td><td>fiShbRaiN</td><td><span class="source-pill source-mit">Butterchurn Presets 2.4.7</span></td></tr><tr><td class="ordinal">54</td><td class="preset-name">fiShbRaiN + Geiss - the adventures of prismo jenkins - tile mix</td><td>fiShbRaiN &amp; Geiss</td><td><span class="source-pill source-mit">Butterchurn Presets 2.4.7</span></td></tr><tr><td class="ordinal">55</td><td class="preset-name">Flexi - impulse drive</td><td>Flexi</td><td><span class="source-pill source-mit">Butterchurn Presets 2.4.7</span></td></tr><tr><td class="ordinal">56</td><td class="preset-name">Flexi - reality tunnel</td><td>Flexi</td><td><span class="source-pill source-mit">Butterchurn Presets 2.4.7</span></td></tr><tr><td class="ordinal">57</td><td class="preset-name">flexi + stahlregen - organic canvas</td><td>Flexi &amp; stahlregen</td><td><span class="source-pill source-mit">Butterchurn Presets 2.4.7</span></td></tr><tr><td class="ordinal">58</td><td class="preset-name">Fvese - Hard Cut</td><td>Fvese</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">59</td><td class="preset-name">Fvese - window reflection5</td><td>Fvese</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">60</td><td class="preset-name">Fvese-lips</td><td>Fvese</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">61</td><td class="preset-name">Fvese-movingpicture</td><td>Fvese</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">62</td><td class="preset-name">Fyornulis- randomosisty 7</td><td>Fyornulis</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">63</td><td class="preset-name">Geiss - Inverted</td><td>Geiss</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">64</td><td class="preset-name">goody(3), hexcollie, fed(2), flexi - #7</td><td>goody, hexcollie, fed &amp; Flexi</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">65</td><td class="preset-name">idiot - Mind Bender 2</td><td>Idiot</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">66</td><td class="preset-name">Idiot - Session 09</td><td>Idiot</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">67</td><td class="preset-name">idiot24-7 - Is this a bug</td><td>Idiot24-7</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">68</td><td class="preset-name">Idiot24-7 - Which Way</td><td>Idiot24-7</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">69</td><td class="preset-name">Idiot24-7 &amp; Unchained - I Don&#x27;t Get It</td><td>Idiot24-7 &amp; Unchained</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">70</td><td class="preset-name">Idiot24-7 &amp; Zylot - Orb of Worlds</td><td>Idiot24-7 &amp; Zylot</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">71</td><td class="preset-name">Idiot24-7-faultthepolice(fadingmix)</td><td>Idiot24-7</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">72</td><td class="preset-name">Illusion &amp; Rovastar - Decitrip</td><td>Illusion &amp; Rovastar</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">73</td><td class="preset-name">Illusion &amp; Unchained - Square Motion</td><td>Illusion &amp; Unchained</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">74</td><td class="preset-name">Krash - Aenema</td><td>Krash</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">75</td><td class="preset-name">Krash&amp;rovastar-multive(indecisivemix)</td><td>Krash &amp; Rovastar</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">76</td><td class="preset-name">martin - castle in the air</td><td>martin</td><td><span class="source-pill source-mit">Butterchurn Presets 2.4.7</span></td></tr><tr><td class="ordinal">77</td><td class="preset-name">Mr_Zoolook - Not so sexy scrolling voiceprint</td><td>Mr_Zoolook</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">78</td><td class="preset-name">Mstress-colorrain</td><td>Mstress</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">79</td><td class="preset-name">Neuro - Tunnel Electro 2</td><td>Neuro</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">80</td><td class="preset-name">nil - Singularity in My Oscilloscope</td><td>nil</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">81</td><td class="preset-name">Pinbi7&amp;fvese-definitlynotfortheepile2</td><td>Pinbi7 &amp; Fvese</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">82</td><td class="preset-name">raron - music radar 4</td><td>raron</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">83</td><td class="preset-name">raron - simple frequency spectrum, clouds vertical scroll</td><td>raron</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">84</td><td class="preset-name">Rozzor - Naked Peace</td><td>Rozzor</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">85</td><td class="preset-name">Rozzor &amp; Krash - Time Enough For Love (Esotic Mix)</td><td>Rozzor &amp; Krash (Esotic mix)</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">86</td><td class="preset-name">StudioMusic - Deviated Boxes</td><td>StudioMusic</td><td><span class="source-pill source-imported">Imported MilkDrop archive</span></td></tr><tr><td class="ordinal">87</td><td class="preset-name">Telek - Sine Wave</td><td>Telek</td><td><span class="source-pill source-mit">Butterchurn Presets 2.4.7</span></td></tr></tbody>
+      </table>
+    </div>
+    <p class="footnote" id="presetCount">Showing all 87 selected presets.</p>
+  </section>
+
+  <section class="section">
+    <div class="eyebrow">06 / FULL LICENCE NOTICES</div>
+    <h2>Licence texts</h2>
+    <p class="section-intro">The notices below reproduce the applicable licence texts and third-party notices retained in the Android project or referenced by the bundled upstream components. Expand a section to read its full text.</p>
+    
+    <details class="license-detail">
+      <summary>MIT License — Butterchurn, Butterchurn Presets, Signalsmith, Demucs, demucs.cpp, Three.js and Emscripten<span class="expand">+</span></summary>
+      <div class="detail-body">
+        <p class="detail-note">The copyright lines above identify the separate MIT-licensed components. The MIT licence for the Butterchurn Presets package applies to that package; the separately imported preset archive is not labelled as MIT here.</p>
+        <pre class="license-text">MIT License
+
+Copyright (c) 2013-2018 Jordan Berg — Butterchurn and Butterchurn Presets
+Copyright (c) 2022 Geraint Luff / Signalsmith Audio Ltd. — Signalsmith Stretch
+Copyright (c) 2025 Signalsmith Audio — Signalsmith Linear
+Copyright (c) Meta Platforms, Inc. and affiliates — Demucs
+Copyright (c) 2023 Sevag H — demucs.cpp
+Copyright © 2010-2024 three.js authors — Three.js
+Copyright (c) 2010-2014 Emscripten authors — Emscripten-generated runtime
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the &quot;Software&quot;), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</pre>
+      </div>
+    </details>
+    <details class="license-detail">
+      <summary>BSD 2-Clause — libnyquist<span class="expand">+</span></summary>
+      <div class="detail-body">
+        
+        <pre class="license-text">Copyright (c) 2019, Dimitri Diakopoulos All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+* Redistributions of source code must retain the above copyright notice, this
+  list of conditions and the following disclaimer.
+
+* Redistributions in binary form must reproduce the above copyright notice,
+  this list of conditions and the following disclaimer in the documentation
+  and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot;
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</pre>
+      </div>
+    </details>
+    <details class="license-detail">
+      <summary>BSD 3-Clause — FLAC, Opus, libVorbis, libOgg, Musepack and WavPack<span class="expand">+</span></summary>
+      <div class="detail-body">
+        <p class="detail-note">These codec notices are taken from libnyquist/COPYING for the codec implementations compiled into the Android native target.</p>
+        <pre class="license-text">
+
+WavPack (3-Clause BSD)
+===============================================================================
+Copyright (c) 1998 - 2015 Conifer Software All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+    * Redistributions of source code must retain the above copyright notice,
+      this list of conditions and the following disclaimer.
+    * Redistributions in binary form must reproduce the above copyright
+      notice, this list of conditions and the following disclaimer in the
+      documentation and/or other materials provided with the distribution.
+    * Neither the name of Conifer Software nor the names of its contributors
+      may be used to endorse or promote products derived from this software
+      without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot;
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE REGENTS OR CONTRIBUTORS BE LIABLE FOR ANY
+DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+============================================================================
+
+Opus Codec (3-Clause BSD)
+===============================================================================
+Copyright 2001-2011 Xiph.Org, Skype Limited, Octasic, Jean-Marc Valin, Timothy
+B. Terriberry, CSIRO, Gregory Maxwell, Mark Borgerding, Erik de Castro Lopo
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+    * Redistributions of source code must retain the above copyright notice,
+      this list of conditions and the following disclaimer.
+    * Redistributions in binary form must reproduce the above copyright
+      notice, this list of conditions and the following disclaimer in the
+      documentation and/or other materials provided with the distribution.
+    * Neither the name of Internet Society, IETF or IETF Trust, nor the names
+      of specific contributors, may be used to endorse or promote products
+      derived from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot;
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE REGENTS OR CONTRIBUTORS BE LIABLE FOR ANY
+DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+Opus is subject to the royalty-free patent licenses which are specified at:
+    Xiph.Org Foundation: https://datatracker.ietf.org/ipr/1524/ Microsoft
+    Corporation: https://datatracker.ietf.org/ipr/1914/ Broadcom Corporation:
+    https://datatracker.ietf.org/ipr/1526/
+
+============================================================================
+
+FLAC Codec (3-Clause BSD)
+===============================================================================
+Copyright (C) 2000-2009  Josh Coalson Copyright (C) 2011-2014  Xiph.Org
+Foundation
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+    * Redistributions of source code must retain the above copyright notice,
+      this list of conditions and the following disclaimer.
+
+    * Redistributions in binary form must reproduce the above copyright
+      notice, this list of conditions and the following disclaimer in the
+      documentation and/or other materials provided with the distribution.
+
+    * Neither the name of the Xiph.org Foundation nor the names of its
+      contributors may be used to endorse or promote products derived from
+      this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS ``AS IS&#x27;&#x27;
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION OR CONTRIBUTORS BE LIABLE FOR
+ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+============================================================================
+
+Libvorbis (3-Clause BSD)
+===============================================================================
+Copyright (c) 2002-2015 Xiph.org Foundation
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+    * Redistributions of source code must retain the above copyright notice,
+      this list of conditions and the following disclaimer.
+
+    * Redistributions in binary form must reproduce the above copyright
+      notice, this list of conditions and the following disclaimer in the
+      documentation and/or other materials provided with the distribution.
+
+    * Neither the name of the Xiph.org Foundation nor the names of its
+      contributors may be used to endorse or promote products derived from
+      this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS ``AS IS&#x27;&#x27;
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION OR CONTRIBUTORS BE LIABLE FOR
+ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+============================================================================
+
+Libogg (3-Clause BSD)
+===============================================================================
+Copyright (c) 2002, Xiph.org Foundation
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+    * Redistributions of source code must retain the above copyright notice,
+      this list of conditions and the following disclaimer.
+
+    * Redistributions in binary form must reproduce the above copyright
+      notice, this list of conditions and the following disclaimer in the
+      documentation and/or other materials provided with the distribution.
+
+    * Neither the name of the Xiph.org Foundation nor the names of its
+      contributors may be used to endorse or promote products derived from
+      this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS ``AS IS&#x27;&#x27;
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION OR CONTRIBUTORS BE LIABLE FOR
+ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+============================================================================
+
+Musepack (3-Clause BSD)
+===============================================================================
+Copyright (c) 2005, The Musepack Development Team
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+    * Redistributions of source code must retain the above copyright notice,
+      this list of conditions and the following disclaimer.
+
+    * Redistributions in binary form must reproduce the above copyright
+      notice, this list of conditions and the following disclaimer in the
+      documentation and/or other materials provided with the distribution.
+
+    * Neither the name of the Xiph.org Foundation nor the names of its
+      contributors may be used to endorse or promote products derived from
+      this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+&quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</pre>
+      </div>
+    </details>
+    <details class="license-detail">
+      <summary>CC0 1.0 Universal — minimp3<span class="expand">+</span></summary>
+      <div class="detail-body">
+        
+        <pre class="license-text">CC0 1.0 Universal
+
+Statement of Purpose
+
+The laws of most jurisdictions throughout the world automatically confer
+exclusive Copyright and Related Rights (defined below) upon the creator and
+subsequent owner(s) (each and all, an &quot;owner&quot;) of an original work of
+authorship and/or a database (each, a &quot;Work&quot;).
+
+Certain owners wish to permanently relinquish those rights to a Work for the
+purpose of contributing to a commons of creative, cultural and scientific
+works (&quot;Commons&quot;) that the public can reliably and without fear of later
+claims of infringement build upon, modify, incorporate in other works, reuse
+and redistribute as freely as possible in any form whatsoever and for any
+purposes, including without limitation commercial purposes. These owners may
+contribute to the Commons to promote the ideal of a free culture and the
+further production of creative, cultural and scientific works, or to gain
+reputation or greater distribution for their Work in part through the use and
+efforts of others.
+
+For these and/or other purposes and motivations, and without any expectation
+of additional consideration or compensation, the person associating CC0 with a
+Work (the &quot;Affirmer&quot;), to the extent that he or she is an owner of Copyright
+and Related Rights in the Work, voluntarily elects to apply CC0 to the Work
+and publicly distribute the Work under its terms, with knowledge of his or her
+Copyright and Related Rights in the Work and the meaning and intended legal
+effect of CC0 on those rights.
+
+1. Copyright and Related Rights. A Work made available under CC0 may be
+protected by copyright and related or neighboring rights (&quot;Copyright and
+Related Rights&quot;). Copyright and Related Rights include, but are not limited
+to, the following:
+
+  i. the right to reproduce, adapt, distribute, perform, display, communicate,
+  and translate a Work;
+
+  ii. moral rights retained by the original author(s) and/or performer(s);
+
+  iii. publicity and privacy rights pertaining to a person&#x27;s image or likeness
+  depicted in a Work;
+
+  iv. rights protecting against unfair competition in regards to a Work,
+  subject to the limitations in paragraph 4(a), below;
+
+  v. rights protecting the extraction, dissemination, use and reuse of data in
+  a Work;
+
+  vi. database rights (such as those arising under Directive 96/9/EC of the
+  European Parliament and of the Council of 11 March 1996 on the legal
+  protection of databases, and under any national implementation thereof,
+  including any amended or successor version of such directive); and
+
+  vii. other similar, equivalent or corresponding rights throughout the world
+  based on applicable law or treaty, and any national implementations thereof.
+
+2. Waiver. To the greatest extent permitted by, but not in contravention of,
+applicable law, Affirmer hereby overtly, fully, permanently, irrevocably and
+unconditionally waives, abandons, and surrenders all of Affirmer&#x27;s Copyright
+and Related Rights and associated claims and causes of action, whether now
+known or unknown (including existing as well as future claims and causes of
+action), in the Work (i) in all territories worldwide, (ii) for the maximum
+duration provided by applicable law or treaty (including future time
+extensions), (iii) in any current or future medium and for any number of
+copies, and (iv) for any purpose whatsoever, including without limitation
+commercial, advertising or promotional purposes (the &quot;Waiver&quot;). Affirmer makes
+the Waiver for the benefit of each member of the public at large and to the
+detriment of Affirmer&#x27;s heirs and successors, fully intending that such Waiver
+shall not be subject to revocation, rescission, cancellation, termination, or
+any other legal or equitable action to disrupt the quiet enjoyment of the Work
+by the public as contemplated by Affirmer&#x27;s express Statement of Purpose.
+
+3. Public License Fallback. Should any part of the Waiver for any reason be
+judged legally invalid or ineffective under applicable law, then the Waiver
+shall be preserved to the maximum extent permitted taking into account
+Affirmer&#x27;s express Statement of Purpose. In addition, to the extent the Waiver
+is so judged Affirmer hereby grants to each affected person a royalty-free,
+non transferable, non sublicensable, non exclusive, irrevocable and
+unconditional license to exercise Affirmer&#x27;s Copyright and Related Rights in
+the Work (i) in all territories worldwide, (ii) for the maximum duration
+provided by applicable law or treaty (including future time extensions), (iii)
+in any current or future medium and for any number of copies, and (iv) for any
+purpose whatsoever, including without limitation commercial, advertising or
+promotional purposes (the &quot;License&quot;). The License shall be deemed effective as
+of the date CC0 was applied by Affirmer to the Work. Should any part of the
+License for any reason be judged legally invalid or ineffective under
+applicable law, such partial invalidity or ineffectiveness shall not
+invalidate the remainder of the License, and in such case Affirmer hereby
+affirms that he or she will not (i) exercise any of his or her remaining
+Copyright and Related Rights in the Work or (ii) assert any associated claims
+and causes of action with respect to the Work, in either case contrary to
+Affirmer&#x27;s express Statement of Purpose.
+
+4. Limitations and Disclaimers.
+
+  a. No trademark or patent rights held by Affirmer are waived, abandoned,
+  surrendered, licensed or otherwise affected by this document.
+
+  b. Affirmer offers the Work as-is and makes no representations or warranties
+  of any kind concerning the Work, express, implied, statutory or otherwise,
+  including without limitation warranties of title, merchantability, fitness
+  for a particular purpose, non infringement, or the absence of latent or
+  other defects, accuracy, or the present or absence of errors, whether or not
+  discoverable, all to the greatest extent permissible under applicable law.
+
+  c. Affirmer disclaims responsibility for clearing rights of other persons
+  that may apply to the Work or any use thereof, including without limitation
+  any person&#x27;s Copyright and Related Rights in the Work. Further, Affirmer
+  disclaims responsibility for obtaining any necessary consents, permissions
+  or other rights required for any use of the Work.
+
+  d. Affirmer understands and acknowledges that Creative Commons is not a
+  party to this document and has no duty or obligation with respect to this
+  CC0 or use of the Work.
+
+For more information, please see
+&lt;http://creativecommons.org/publicdomain/zero/1.0/&gt;
+
+</pre>
+      </div>
+    </details>
+    <details class="license-detail">
+      <summary>Mozilla Public License 2.0 — Eigen<span class="expand">+</span></summary>
+      <div class="detail-body">
+        <p class="detail-note">Eigen is primarily distributed under MPL 2.0. The bundled Eigen source also retains additional third-party notices below.</p>
+        <pre class="license-text">Mozilla Public License Version 2.0
+==================================
+
+1. Definitions
+--------------
+
+1.1. &quot;Contributor&quot;
+    means each individual or legal entity that creates, contributes to
+    the creation of, or owns Covered Software.
+
+1.2. &quot;Contributor Version&quot;
+    means the combination of the Contributions of others (if any) used
+    by a Contributor and that particular Contributor&#x27;s Contribution.
+
+1.3. &quot;Contribution&quot;
+    means Covered Software of a particular Contributor.
+
+1.4. &quot;Covered Software&quot;
+    means Source Code Form to which the initial Contributor has attached
+    the notice in Exhibit A, the Executable Form of such Source Code
+    Form, and Modifications of such Source Code Form, in each case
+    including portions thereof.
+
+1.5. &quot;Incompatible With Secondary Licenses&quot;
+    means
+
+    (a) that the initial Contributor has attached the notice described
+        in Exhibit B to the Covered Software; or
+
+    (b) that the Covered Software was made available under the terms of
+        version 1.1 or earlier of the License, but not also under the
+        terms of a Secondary License.
+
+1.6. &quot;Executable Form&quot;
+    means any form of the work other than Source Code Form.
+
+1.7. &quot;Larger Work&quot;
+    means a work that combines Covered Software with other material, in 
+    a separate file or files, that is not Covered Software.
+
+1.8. &quot;License&quot;
+    means this document.
+
+1.9. &quot;Licensable&quot;
+    means having the right to grant, to the maximum extent possible,
+    whether at the time of the initial grant or subsequently, any and
+    all of the rights conveyed by this License.
+
+1.10. &quot;Modifications&quot;
+    means any of the following:
+
+    (a) any file in Source Code Form that results from an addition to,
+        deletion from, or modification of the contents of Covered
+        Software; or
+
+    (b) any new file in Source Code Form that contains any Covered
+        Software.
+
+1.11. &quot;Patent Claims&quot; of a Contributor
+    means any patent claim(s), including without limitation, method,
+    process, and apparatus claims, in any patent Licensable by such
+    Contributor that would be infringed, but for the grant of the
+    License, by the making, using, selling, offering for sale, having
+    made, import, or transfer of either its Contributions or its
+    Contributor Version.
+
+1.12. &quot;Secondary License&quot;
+    means either the GNU General Public License, Version 2.0, the GNU
+    Lesser General Public License, Version 2.1, the GNU Affero General
+    Public License, Version 3.0, or any later versions of those
+    licenses.
+
+1.13. &quot;Source Code Form&quot;
+    means the form of the work preferred for making modifications.
+
+1.14. &quot;You&quot; (or &quot;Your&quot;)
+    means an individual or a legal entity exercising rights under this
+    License. For legal entities, &quot;You&quot; includes any entity that
+    controls, is controlled by, or is under common control with You. For
+    purposes of this definition, &quot;control&quot; means (a) the power, direct
+    or indirect, to cause the direction or management of such entity,
+    whether by contract or otherwise, or (b) ownership of more than
+    fifty percent (50%) of the outstanding shares or beneficial
+    ownership of such entity.
+
+2. License Grants and Conditions
+--------------------------------
+
+2.1. Grants
+
+Each Contributor hereby grants You a world-wide, royalty-free,
+non-exclusive license:
+
+(a) under intellectual property rights (other than patent or trademark)
+    Licensable by such Contributor to use, reproduce, make available,
+    modify, display, perform, distribute, and otherwise exploit its
+    Contributions, either on an unmodified basis, with Modifications, or
+    as part of a Larger Work; and
+
+(b) under Patent Claims of such Contributor to make, use, sell, offer
+    for sale, have made, import, and otherwise transfer either its
+    Contributions or its Contributor Version.
+
+2.2. Effective Date
+
+The licenses granted in Section 2.1 with respect to any Contribution
+become effective for each Contribution on the date the Contributor first
+distributes such Contribution.
+
+2.3. Limitations on Grant Scope
+
+The licenses granted in this Section 2 are the only rights granted under
+this License. No additional rights or licenses will be implied from the
+distribution or licensing of Covered Software under this License.
+Notwithstanding Section 2.1(b) above, no patent license is granted by a
+Contributor:
+
+(a) for any code that a Contributor has removed from Covered Software;
+    or
+
+(b) for infringements caused by: (i) Your and any other third party&#x27;s
+    modifications of Covered Software, or (ii) the combination of its
+    Contributions with other software (except as part of its Contributor
+    Version); or
+
+(c) under Patent Claims infringed by Covered Software in the absence of
+    its Contributions.
+
+This License does not grant any rights in the trademarks, service marks,
+or logos of any Contributor (except as may be necessary to comply with
+the notice requirements in Section 3.4).
+
+2.4. Subsequent Licenses
+
+No Contributor makes additional grants as a result of Your choice to
+distribute the Covered Software under a subsequent version of this
+License (see Section 10.2) or under the terms of a Secondary License (if
+permitted under the terms of Section 3.3).
+
+2.5. Representation
+
+Each Contributor represents that the Contributor believes its
+Contributions are its original creation(s) or it has sufficient rights
+to grant the rights to its Contributions conveyed by this License.
+
+2.6. Fair Use
+
+This License is not intended to limit any rights You have under
+applicable copyright doctrines of fair use, fair dealing, or other
+equivalents.
+
+2.7. Conditions
+
+Sections 3.1, 3.2, 3.3, and 3.4 are conditions of the licenses granted
+in Section 2.1.
+
+3. Responsibilities
+-------------------
+
+3.1. Distribution of Source Form
+
+All distribution of Covered Software in Source Code Form, including any
+Modifications that You create or to which You contribute, must be under
+the terms of this License. You must inform recipients that the Source
+Code Form of the Covered Software is governed by the terms of this
+License, and how they can obtain a copy of this License. You may not
+attempt to alter or restrict the recipients&#x27; rights in the Source Code
+Form.
+
+3.2. Distribution of Executable Form
+
+If You distribute Covered Software in Executable Form then:
+
+(a) such Covered Software must also be made available in Source Code
+    Form, as described in Section 3.1, and You must inform recipients of
+    the Executable Form how they can obtain a copy of such Source Code
+    Form by reasonable means in a timely manner, at a charge no more
+    than the cost of distribution to the recipient; and
+
+(b) You may distribute such Executable Form under the terms of this
+    License, or sublicense it under different terms, provided that the
+    license for the Executable Form does not attempt to limit or alter
+    the recipients&#x27; rights in the Source Code Form under this License.
+
+3.3. Distribution of a Larger Work
+
+You may create and distribute a Larger Work under terms of Your choice,
+provided that You also comply with the requirements of this License for
+the Covered Software. If the Larger Work is a combination of Covered
+Software with a work governed by one or more Secondary Licenses, and the
+Covered Software is not Incompatible With Secondary Licenses, this
+License permits You to additionally distribute such Covered Software
+under the terms of such Secondary License(s), so that the recipient of
+the Larger Work may, at their option, further distribute the Covered
+Software under the terms of either this License or such Secondary
+License(s).
+
+3.4. Notices
+
+You may not remove or alter the substance of any license notices
+(including copyright notices, patent notices, disclaimers of warranty,
+or limitations of liability) contained within the Source Code Form of
+the Covered Software, except that You may alter any license notices to
+the extent required to remedy known factual inaccuracies.
+
+3.5. Application of Additional Terms
+
+You may choose to offer, and to charge a fee for, warranty, support,
+indemnity or liability obligations to one or more recipients of Covered
+Software. However, You may do so only on Your own behalf, and not on
+behalf of any Contributor. You must make it absolutely clear that any
+such warranty, support, indemnity, or liability obligation is offered by
+You alone, and You hereby agree to indemnify every Contributor for any
+liability incurred by such Contributor as a result of warranty, support,
+indemnity or liability terms You offer. You may include additional
+disclaimers of warranty and limitations of liability specific to any
+jurisdiction.
+
+4. Inability to Comply Due to Statute or Regulation
+---------------------------------------------------
+
+If it is impossible for You to comply with any of the terms of this
+License with respect to some or all of the Covered Software due to
+statute, judicial order, or regulation then You must: (a) comply with
+the terms of this License to the maximum extent possible; and (b)
+describe the limitations and the code they affect. Such description must
+be placed in a text file included with all distributions of the Covered
+Software under this License. Except to the extent prohibited by statute
+or regulation, such description must be sufficiently detailed for a
+recipient of ordinary skill to be able to understand it.
+
+5. Termination
+--------------
+
+5.1. The rights granted under this License will terminate automatically
+if You fail to comply with any of its terms. However, if You become
+compliant, then the rights granted under this License from a particular
+Contributor are reinstated (a) provisionally, unless and until such
+Contributor explicitly and finally terminates Your grants, and (b) on an
+ongoing basis, if such Contributor fails to notify You of the
+non-compliance by some reasonable means prior to 60 days after You have
+come back into compliance. Moreover, Your grants from a particular
+Contributor are reinstated on an ongoing basis if such Contributor
+notifies You of the non-compliance by some reasonable means, this is the
+first time You have received notice of non-compliance with this License
+from such Contributor, and You become compliant prior to 30 days after
+Your receipt of the notice.
+
+5.2. If You initiate litigation against any entity by asserting a patent
+infringement claim (excluding declaratory judgment actions,
+counter-claims, and cross-claims) alleging that a Contributor Version
+directly or indirectly infringes any patent, then the rights granted to
+You by any and all Contributors for the Covered Software under Section
+2.1 of this License shall terminate.
+
+5.3. In the event of termination under Sections 5.1 or 5.2 above, all
+end user license agreements (excluding distributors and resellers) which
+have been validly granted by You or Your distributors under this License
+prior to termination shall survive termination.
+
+************************************************************************
+*                                                                      *
+*  6. Disclaimer of Warranty                                           *
+*  -------------------------                                           *
+*                                                                      *
+*  Covered Software is provided under this License on an &quot;as is&quot;       *
+*  basis, without warranty of any kind, either expressed, implied, or  *
+*  statutory, including, without limitation, warranties that the       *
+*  Covered Software is free of defects, merchantable, fit for a        *
+*  particular purpose or non-infringing. The entire risk as to the     *
+*  quality and performance of the Covered Software is with You.        *
+*  Should any Covered Software prove defective in any respect, You     *
+*  (not any Contributor) assume the cost of any necessary servicing,   *
+*  repair, or correction. This disclaimer of warranty constitutes an   *
+*  essential part of this License. No use of any Covered Software is   *
+*  authorized under this License except under this disclaimer.         *
+*                                                                      *
+************************************************************************
+
+************************************************************************
+*                                                                      *
+*  7. Limitation of Liability                                          *
+*  --------------------------                                          *
+*                                                                      *
+*  Under no circumstances and under no legal theory, whether tort      *
+*  (including negligence), contract, or otherwise, shall any           *
+*  Contributor, or anyone who distributes Covered Software as          *
+*  permitted above, be liable to You for any direct, indirect,         *
+*  special, incidental, or consequential damages of any character      *
+*  including, without limitation, damages for lost profits, loss of    *
+*  goodwill, work stoppage, computer failure or malfunction, or any    *
+*  and all other commercial damages or losses, even if such party      *
+*  shall have been informed of the possibility of such damages. This   *
+*  limitation of liability shall not apply to liability for death or   *
+*  personal injury resulting from such party&#x27;s negligence to the       *
+*  extent applicable law prohibits such limitation. Some               *
+*  jurisdictions do not allow the exclusion or limitation of           *
+*  incidental or consequential damages, so this exclusion and          *
+*  limitation may not apply to You.                                    *
+*                                                                      *
+************************************************************************
+
+8. Litigation
+-------------
+
+Any litigation relating to this License may be brought only in the
+courts of a jurisdiction where the defendant maintains its principal
+place of business and such litigation shall be governed by laws of that
+jurisdiction, without reference to its conflict-of-law provisions.
+Nothing in this Section shall prevent a party&#x27;s ability to bring
+cross-claims or counter-claims.
+
+9. Miscellaneous
+----------------
+
+This License represents the complete agreement concerning the subject
+matter hereof. If any provision of this License is held to be
+unenforceable, such provision shall be reformed only to the extent
+necessary to make it enforceable. Any law or regulation which provides
+that the language of a contract shall be construed against the drafter
+shall not be used to construe this License against a Contributor.
+
+10. Versions of the License
+---------------------------
+
+10.1. New Versions
+
+Mozilla Foundation is the license steward. Except as provided in Section
+10.3, no one other than the license steward has the right to modify or
+publish new versions of this License. Each version will be given a
+distinguishing version number.
+
+10.2. Effect of New Versions
+
+You may distribute the Covered Software under the terms of the version
+of the License under which You originally received the Covered Software,
+or under the terms of any subsequent version published by the license
+steward.
+
+10.3. Modified Versions
+
+If you create software not governed by this License, and you want to
+create a new license for such software, you may create and use a
+modified version of this License if you rename the license and remove
+any references to the name of the license steward (except to note that
+such modified license differs from this License).
+
+10.4. Distributing Source Code Form that is Incompatible With Secondary
+Licenses
+
+If You choose to distribute Source Code Form that is Incompatible With
+Secondary Licenses under the terms of this version of the License, the
+notice described in Exhibit B of this License must be attached.
+
+Exhibit A - Source Code Form License Notice
+-------------------------------------------
+
+  This Source Code Form is subject to the terms of the Mozilla Public
+  License, v. 2.0. If a copy of the MPL was not distributed with this
+  file, You can obtain one at https://mozilla.org/MPL/2.0/.
+
+If it is not possible or desirable to put the notice in a particular
+file, then You may include the notice in a location (such as a LICENSE
+file in a relevant directory) where a recipient would be likely to look
+for such a notice.
+
+You may add additional accurate notices of copyright ownership.
+
+Exhibit B - &quot;Incompatible With Secondary Licenses&quot; Notice
+---------------------------------------------------------
+
+  This Source Code Form is &quot;Incompatible With Secondary Licenses&quot;, as
+  defined by the Mozilla Public License, v. 2.0.
+</pre>
+      </div>
+    </details>
+    <details class="license-detail">
+      <summary>Apache License 2.0 — AndroidX, Material Components, Android resampler and Eigen notices<span class="expand">+</span></summary>
+      <div class="detail-body">
+        <p class="detail-note">Applies to the AndroidX/Material dependencies, the Android Open Source Project resampler, and any Eigen files carrying the Apache notice.</p>
+        <pre class="license-text">/*
+                                 Apache License
+                           Version 2.0, January 2004
+                        http://www.apache.org/licenses/
+
+   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+
+   1. Definitions.
+
+      &quot;License&quot; shall mean the terms and conditions for use, reproduction,
+      and distribution as defined by Sections 1 through 9 of this document.
+
+      &quot;Licensor&quot; shall mean the copyright owner or entity authorized by
+      the copyright owner that is granting the License.
+
+      &quot;Legal Entity&quot; shall mean the union of the acting entity and all
+      other entities that control, are controlled by, or are under common
+      control with that entity. For the purposes of this definition,
+      &quot;control&quot; means (i) the power, direct or indirect, to cause the
+      direction or management of such entity, whether by contract or
+      otherwise, or (ii) ownership of fifty percent (50%) or more of the
+      outstanding shares, or (iii) beneficial ownership of such entity.
+
+      &quot;You&quot; (or &quot;Your&quot;) shall mean an individual or Legal Entity
+      exercising permissions granted by this License.
+
+      &quot;Source&quot; form shall mean the preferred form for making modifications,
+      including but not limited to software source code, documentation
+      source, and configuration files.
+
+      &quot;Object&quot; form shall mean any form resulting from mechanical
+      transformation or translation of a Source form, including but
+      not limited to compiled object code, generated documentation,
+      and conversions to other media types.
+
+      &quot;Work&quot; shall mean the work of authorship, whether in Source or
+      Object form, made available under the License, as indicated by a
+      copyright notice that is included in or attached to the work
+      (an example is provided in the Appendix below).
+
+      &quot;Derivative Works&quot; shall mean any work, whether in Source or Object
+      form, that is based on (or derived from) the Work and for which the
+      editorial revisions, annotations, elaborations, or other modifications
+      represent, as a whole, an original work of authorship. For the purposes
+      of this License, Derivative Works shall not include works that remain
+      separable from, or merely link (or bind by name) to the interfaces of,
+      the Work and Derivative Works thereof.
+
+      &quot;Contribution&quot; shall mean any work of authorship, including
+      the original version of the Work and any modifications or additions
+      to that Work or Derivative Works thereof, that is intentionally
+      submitted to Licensor for inclusion in the Work by the copyright owner
+      or by an individual or Legal Entity authorized to submit on behalf of
+      the copyright owner. For the purposes of this definition, &quot;submitted&quot;
+      means any form of electronic, verbal, or written communication sent
+      to the Licensor or its representatives, including but not limited to
+      communication on electronic mailing lists, source code control systems,
+      and issue tracking systems that are managed by, or on behalf of, the
+      Licensor for the purpose of discussing and improving the Work, but
+      excluding communication that is conspicuously marked or otherwise
+      designated in writing by the copyright owner as &quot;Not a Contribution.&quot;
+
+      &quot;Contributor&quot; shall mean Licensor and any individual or Legal Entity
+      on behalf of whom a Contribution has been received by Licensor and
+      subsequently incorporated within the Work.
+
+   2. Grant of Copyright License. Subject to the terms and conditions of
+      this License, each Contributor hereby grants to You a perpetual,
+      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+      copyright license to reproduce, prepare Derivative Works of,
+      publicly display, publicly perform, sublicense, and distribute the
+      Work and such Derivative Works in Source or Object form.
+
+   3. Grant of Patent License. Subject to the terms and conditions of
+      this License, each Contributor hereby grants to You a perpetual,
+      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+      (except as stated in this section) patent license to make, have made,
+      use, offer to sell, sell, import, and otherwise transfer the Work,
+      where such license applies only to those patent claims licensable
+      by such Contributor that are necessarily infringed by their
+      Contribution(s) alone or by combination of their Contribution(s)
+      with the Work to which such Contribution(s) was submitted. If You
+      institute patent litigation against any entity (including a
+      cross-claim or counterclaim in a lawsuit) alleging that the Work
+      or a Contribution incorporated within the Work constitutes direct
+      or contributory patent infringement, then any patent licenses
+      granted to You under this License for that Work shall terminate
+      as of the date such litigation is filed.
+
+   4. Redistribution. You may reproduce and distribute copies of the
+      Work or Derivative Works thereof in any medium, with or without
+      modifications, and in Source or Object form, provided that You
+      meet the following conditions:
+
+      (a) You must give any other recipients of the Work or
+          Derivative Works a copy of this License; and
+
+      (b) You must cause any modified files to carry prominent notices
+          stating that You changed the files; and
+
+      (c) You must retain, in the Source form of any Derivative Works
+          that You distribute, all copyright, patent, trademark, and
+          attribution notices from the Source form of the Work,
+          excluding those notices that do not pertain to any part of
+          the Derivative Works; and
+
+      (d) If the Work includes a &quot;NOTICE&quot; text file as part of its
+          distribution, then any Derivative Works that You distribute must
+          include a readable copy of the attribution notices contained
+          within such NOTICE file, excluding those notices that do not
+          pertain to any part of the Derivative Works, in at least one
+          of the following places: within a NOTICE text file distributed
+          as part of the Derivative Works; within the Source form or
+          documentation, if provided along with the Derivative Works; or,
+          within a display generated by the Derivative Works, if and
+          wherever such third-party notices normally appear. The contents
+          of the NOTICE file are for informational purposes only and
+          do not modify the License. You may add Your own attribution
+          notices within Derivative Works that You distribute, alongside
+          or as an addendum to the NOTICE text from the Work, provided
+          that such additional attribution notices cannot be construed
+          as modifying the License.
+
+      You may add Your own copyright statement to Your modifications and
+      may provide additional or different license terms and conditions
+      for use, reproduction, or distribution of Your modifications, or
+      for any such Derivative Works as a whole, provided Your use,
+      reproduction, and distribution of the Work otherwise complies with
+      the conditions stated in this License.
+
+   5. Submission of Contributions. Unless You explicitly state otherwise,
+      any Contribution intentionally submitted for inclusion in the Work
+      by You to the Licensor shall be under the terms and conditions of
+      this License, without any additional terms or conditions.
+      Notwithstanding the above, nothing herein shall supersede or modify
+      the terms of any separate license agreement you may have executed
+      with Licensor regarding such Contributions.
+
+   6. Trademarks. This License does not grant permission to use the trade
+      names, trademarks, service marks, or product names of the Licensor,
+      except as required for reasonable and customary use in describing the
+      origin of the Work and reproducing the content of the NOTICE file.
+
+   7. Disclaimer of Warranty. Unless required by applicable law or
+      agreed to in writing, Licensor provides the Work (and each
+      Contributor provides its Contributions) on an &quot;AS IS&quot; BASIS,
+      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+      implied, including, without limitation, any warranties or conditions
+      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
+      PARTICULAR PURPOSE. You are solely responsible for determining the
+      appropriateness of using or redistributing the Work and assume any
+      risks associated with Your exercise of permissions under this License.
+
+   8. Limitation of Liability. In no event and under no legal theory,
+      whether in tort (including negligence), contract, or otherwise,
+      unless required by applicable law (such as deliberate and grossly
+      negligent acts) or agreed to in writing, shall any Contributor be
+      liable to You for damages, including any direct, indirect, special,
+      incidental, or consequential damages of any character arising as a
+      result of this License or out of the use or inability to use the
+      Work (including but not limited to damages for loss of goodwill,
+      work stoppage, computer failure or malfunction, or any and all
+      other commercial damages or losses), even if such Contributor
+      has been advised of the possibility of such damages.
+
+   9. Accepting Warranty or Additional Liability. While redistributing
+      the Work or Derivative Works thereof, You may choose to offer,
+      and charge a fee for, acceptance of support, warranty, indemnity,
+      or other liability obligations and/or rights consistent with this
+      License. However, in accepting such obligations, You may act only
+      on Your own behalf and on Your sole responsibility, not on behalf
+      of any other Contributor, and only if You agree to indemnify,
+      defend, and hold each Contributor harmless for any liability
+      incurred by, or claims asserted against, such Contributor by reason
+      of your accepting any such warranty or additional liability.
+
+   END OF TERMS AND CONDITIONS
+
+   APPENDIX: How to apply the Apache License to your work.
+
+      To apply the Apache License to your work, attach the following
+      boilerplate notice, with the fields enclosed by brackets &quot;[]&quot;
+      replaced with your own identifying information. (Don&#x27;t include
+      the brackets!)  The text should be enclosed in the appropriate
+      comment syntax for the file format. We also recommend that a
+      file or class name and description of purpose be included on the
+      same &quot;printed page&quot; as the copyright notice for easier
+      identification within third-party archives.
+
+   Copyright [yyyy] [name of copyright owner]
+
+   Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+*/</pre>
+      </div>
+    </details>
+    <details class="license-detail">
+      <summary>BSD notice — Eigen bundled source<span class="expand">+</span></summary>
+      <div class="detail-body">
+        
+        <pre class="license-text">/*
+ Copyright (c) 2011, Intel Corporation. All rights reserved.
+
+ Redistribution and use in source and binary forms, with or without modification,
+ are permitted provided that the following conditions are met:
+
+ * Redistributions of source code must retain the above copyright notice, this
+   list of conditions and the following disclaimer.
+ * Redistributions in binary form must reproduce the above copyright notice,
+   this list of conditions and the following disclaimer in the documentation
+   and/or other materials provided with the distribution.
+ * Neither the name of Intel Corporation nor the names of its contributors may
+   be used to endorse or promote products derived from this software without
+   specific prior written permission.
+
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND
+ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR
+ ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*/
+</pre>
+      </div>
+    </details>
+    <details class="license-detail">
+      <summary>Apache notice — Eigen bundled source<span class="expand">+</span></summary>
+      <div class="detail-body">
+        
+        <pre class="license-text">/*
+                                 Apache License
+                           Version 2.0, January 2004
+                        http://www.apache.org/licenses/
+
+   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+
+   1. Definitions.
+
+      &quot;License&quot; shall mean the terms and conditions for use, reproduction,
+      and distribution as defined by Sections 1 through 9 of this document.
+
+      &quot;Licensor&quot; shall mean the copyright owner or entity authorized by
+      the copyright owner that is granting the License.
+
+      &quot;Legal Entity&quot; shall mean the union of the acting entity and all
+      other entities that control, are controlled by, or are under common
+      control with that entity. For the purposes of this definition,
+      &quot;control&quot; means (i) the power, direct or indirect, to cause the
+      direction or management of such entity, whether by contract or
+      otherwise, or (ii) ownership of fifty percent (50%) or more of the
+      outstanding shares, or (iii) beneficial ownership of such entity.
+
+      &quot;You&quot; (or &quot;Your&quot;) shall mean an individual or Legal Entity
+      exercising permissions granted by this License.
+
+      &quot;Source&quot; form shall mean the preferred form for making modifications,
+      including but not limited to software source code, documentation
+      source, and configuration files.
+
+      &quot;Object&quot; form shall mean any form resulting from mechanical
+      transformation or translation of a Source form, including but
+      not limited to compiled object code, generated documentation,
+      and conversions to other media types.
+
+      &quot;Work&quot; shall mean the work of authorship, whether in Source or
+      Object form, made available under the License, as indicated by a
+      copyright notice that is included in or attached to the work
+      (an example is provided in the Appendix below).
+
+      &quot;Derivative Works&quot; shall mean any work, whether in Source or Object
+      form, that is based on (or derived from) the Work and for which the
+      editorial revisions, annotations, elaborations, or other modifications
+      represent, as a whole, an original work of authorship. For the purposes
+      of this License, Derivative Works shall not include works that remain
+      separable from, or merely link (or bind by name) to the interfaces of,
+      the Work and Derivative Works thereof.
+
+      &quot;Contribution&quot; shall mean any work of authorship, including
+      the original version of the Work and any modifications or additions
+      to that Work or Derivative Works thereof, that is intentionally
+      submitted to Licensor for inclusion in the Work by the copyright owner
+      or by an individual or Legal Entity authorized to submit on behalf of
+      the copyright owner. For the purposes of this definition, &quot;submitted&quot;
+      means any form of electronic, verbal, or written communication sent
+      to the Licensor or its representatives, including but not limited to
+      communication on electronic mailing lists, source code control systems,
+      and issue tracking systems that are managed by, or on behalf of, the
+      Licensor for the purpose of discussing and improving the Work, but
+      excluding communication that is conspicuously marked or otherwise
+      designated in writing by the copyright owner as &quot;Not a Contribution.&quot;
+
+      &quot;Contributor&quot; shall mean Licensor and any individual or Legal Entity
+      on behalf of whom a Contribution has been received by Licensor and
+      subsequently incorporated within the Work.
+
+   2. Grant of Copyright License. Subject to the terms and conditions of
+      this License, each Contributor hereby grants to You a perpetual,
+      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+      copyright license to reproduce, prepare Derivative Works of,
+      publicly display, publicly perform, sublicense, and distribute the
+      Work and such Derivative Works in Source or Object form.
+
+   3. Grant of Patent License. Subject to the terms and conditions of
+      this License, each Contributor hereby grants to You a perpetual,
+      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+      (except as stated in this section) patent license to make, have made,
+      use, offer to sell, sell, import, and otherwise transfer the Work,
+      where such license applies only to those patent claims licensable
+      by such Contributor that are necessarily infringed by their
+      Contribution(s) alone or by combination of their Contribution(s)
+      with the Work to which such Contribution(s) was submitted. If You
+      institute patent litigation against any entity (including a
+      cross-claim or counterclaim in a lawsuit) alleging that the Work
+      or a Contribution incorporated within the Work constitutes direct
+      or contributory patent infringement, then any patent licenses
+      granted to You under this License for that Work shall terminate
+      as of the date such litigation is filed.
+
+   4. Redistribution. You may reproduce and distribute copies of the
+      Work or Derivative Works thereof in any medium, with or without
+      modifications, and in Source or Object form, provided that You
+      meet the following conditions:
+
+      (a) You must give any other recipients of the Work or
+          Derivative Works a copy of this License; and
+
+      (b) You must cause any modified files to carry prominent notices
+          stating that You changed the files; and
+
+      (c) You must retain, in the Source form of any Derivative Works
+          that You distribute, all copyright, patent, trademark, and
+          attribution notices from the Source form of the Work,
+          excluding those notices that do not pertain to any part of
+          the Derivative Works; and
+
+      (d) If the Work includes a &quot;NOTICE&quot; text file as part of its
+          distribution, then any Derivative Works that You distribute must
+          include a readable copy of the attribution notices contained
+          within such NOTICE file, excluding those notices that do not
+          pertain to any part of the Derivative Works, in at least one
+          of the following places: within a NOTICE text file distributed
+          as part of the Derivative Works; within the Source form or
+          documentation, if provided along with the Derivative Works; or,
+          within a display generated by the Derivative Works, if and
+          wherever such third-party notices normally appear. The contents
+          of the NOTICE file are for informational purposes only and
+          do not modify the License. You may add Your own attribution
+          notices within Derivative Works that You distribute, alongside
+          or as an addendum to the NOTICE text from the Work, provided
+          that such additional attribution notices cannot be construed
+          as modifying the License.
+
+      You may add Your own copyright statement to Your modifications and
+      may provide additional or different license terms and conditions
+      for use, reproduction, or distribution of Your modifications, or
+      for any such Derivative Works as a whole, provided Your use,
+      reproduction, and distribution of the Work otherwise complies with
+      the conditions stated in this License.
+
+   5. Submission of Contributions. Unless You explicitly state otherwise,
+      any Contribution intentionally submitted for inclusion in the Work
+      by You to the Licensor shall be under the terms and conditions of
+      this License, without any additional terms or conditions.
+      Notwithstanding the above, nothing herein shall supersede or modify
+      the terms of any separate license agreement you may have executed
+      with Licensor regarding such Contributions.
+
+   6. Trademarks. This License does not grant permission to use the trade
+      names, trademarks, service marks, or product names of the Licensor,
+      except as required for reasonable and customary use in describing the
+      origin of the Work and reproducing the content of the NOTICE file.
+
+   7. Disclaimer of Warranty. Unless required by applicable law or
+      agreed to in writing, Licensor provides the Work (and each
+      Contributor provides its Contributions) on an &quot;AS IS&quot; BASIS,
+      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+      implied, including, without limitation, any warranties or conditions
+      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
+      PARTICULAR PURPOSE. You are solely responsible for determining the
+      appropriateness of using or redistributing the Work and assume any
+      risks associated with Your exercise of permissions under this License.
+
+   8. Limitation of Liability. In no event and under no legal theory,
+      whether in tort (including negligence), contract, or otherwise,
+      unless required by applicable law (such as deliberate and grossly
+      negligent acts) or agreed to in writing, shall any Contributor be
+      liable to You for damages, including any direct, indirect, special,
+      incidental, or consequential damages of any character arising as a
+      result of this License or out of the use or inability to use the
+      Work (including but not limited to damages for loss of goodwill,
+      work stoppage, computer failure or malfunction, or any and all
+      other commercial damages or losses), even if such Contributor
+      has been advised of the possibility of such damages.
+
+   9. Accepting Warranty or Additional Liability. While redistributing
+      the Work or Derivative Works thereof, You may choose to offer,
+      and charge a fee for, acceptance of support, warranty, indemnity,
+      or other liability obligations and/or rights consistent with this
+      License. However, in accepting such obligations, You may act only
+      on Your own behalf and on Your sole responsibility, not on behalf
+      of any other Contributor, and only if You agree to indemnify,
+      defend, and hold each Contributor harmless for any liability
+      incurred by, or claims asserted against, such Contributor by reason
+      of your accepting any such warranty or additional liability.
+
+   END OF TERMS AND CONDITIONS
+
+   APPENDIX: How to apply the Apache License to your work.
+
+      To apply the Apache License to your work, attach the following
+      boilerplate notice, with the fields enclosed by brackets &quot;[]&quot;
+      replaced with your own identifying information. (Don&#x27;t include
+      the brackets!)  The text should be enclosed in the appropriate
+      comment syntax for the file format. We also recommend that a
+      file or class name and description of purpose be included on the
+      same &quot;printed page&quot; as the copyright notice for easier
+      identification within third-party archives.
+
+   Copyright [yyyy] [name of copyright owner]
+
+   Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+*/</pre>
+      </div>
+    </details>
+    <details class="license-detail">
+      <summary>MINPACK notice — Eigen bundled source<span class="expand">+</span></summary>
+      <div class="detail-body">
+        <p class="detail-note">Retained from the bundled Eigen distribution as an additional source notice. The current Demucs source includes Eigen Core, Dense, Tensor, FFT and MatrixFunctions headers.</p>
+        <pre class="license-text">Minpack Copyright Notice (1999) University of Chicago.  All rights reserved
+
+Redistribution and use in source and binary forms, with or
+without modification, are permitted provided that the
+following conditions are met:
+
+1. Redistributions of source code must retain the above
+copyright notice, this list of conditions and the following
+disclaimer.
+
+2. Redistributions in binary form must reproduce the above
+copyright notice, this list of conditions and the following
+disclaimer in the documentation and/or other materials
+provided with the distribution.
+
+3. The end-user documentation included with the
+redistribution, if any, must include the following
+acknowledgment:
+
+   &quot;This product includes software developed by the
+   University of Chicago, as Operator of Argonne National
+   Laboratory.
+
+Alternately, this acknowledgment may appear in the software
+itself, if and wherever such third-party acknowledgments
+normally appear.
+
+4. WARRANTY DISCLAIMER. THE SOFTWARE IS SUPPLIED &quot;AS IS&quot;
+WITHOUT WARRANTY OF ANY KIND. THE COPYRIGHT HOLDER, THE
+UNITED STATES, THE UNITED STATES DEPARTMENT OF ENERGY, AND
+THEIR EMPLOYEES: (1) DISCLAIM ANY WARRANTIES, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO ANY IMPLIED WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE
+OR NON-INFRINGEMENT, (2) DO NOT ASSUME ANY LEGAL LIABILITY
+OR RESPONSIBILITY FOR THE ACCURACY, COMPLETENESS, OR
+USEFULNESS OF THE SOFTWARE, (3) DO NOT REPRESENT THAT USE OF
+THE SOFTWARE WOULD NOT INFRINGE PRIVATELY OWNED RIGHTS, (4)
+DO NOT WARRANT THAT THE SOFTWARE WILL FUNCTION
+UNINTERRUPTED, THAT IT IS ERROR-FREE OR THAT ANY ERRORS WILL
+BE CORRECTED.
+
+5. LIMITATION OF LIABILITY. IN NO EVENT WILL THE COPYRIGHT
+HOLDER, THE UNITED STATES, THE UNITED STATES DEPARTMENT OF
+ENERGY, OR THEIR EMPLOYEES: BE LIABLE FOR ANY INDIRECT,
+INCIDENTAL, CONSEQUENTIAL, SPECIAL OR PUNITIVE DAMAGES OF
+ANY KIND OR NATURE, INCLUDING BUT NOT LIMITED TO LOSS OF
+PROFITS OR LOSS OF DATA, FOR ANY REASON WHATSOEVER, WHETHER
+SUCH LIABILITY IS ASSERTED ON THE BASIS OF CONTRACT, TORT
+(INCLUDING NEGLIGENCE OR STRICT LIABILITY), OR OTHERWISE,
+EVEN IF ANY OF SAID PARTIES HAS BEEN WARNED OF THE
+POSSIBILITY OF SUCH LOSS OR DAMAGES.
+</pre>
+      </div>
+    </details>
+    <details class="license-detail">
+      <summary>SIL Open Font License 1.1 — JetBrains Mono, Plus Jakarta Sans and Space Grotesk<span class="expand">+</span></summary>
+      <div class="detail-body">
+        
+        <pre class="license-text">SIL OPEN FONT LICENSE Version 1.1
+
+Copyright 2020 The JetBrains Mono Project Authors — https://github.com/JetBrains/JetBrainsMono
+Copyright 2020 The Plus Jakarta Sans Project Authors — https://github.com/tokotype/PlusJakartaSans
+Copyright 2020 The Space Grotesk Project Authors — https://github.com/floriankarsten/space-grotesk
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at:
+https://openfontlicense.org
+
+
+-----------------------------------------------------------
+SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
+-----------------------------------------------------------
+
+PREAMBLE
+The goals of the Open Font License (OFL) are to stimulate worldwide
+development of collaborative font projects, to support the font creation
+efforts of academic and linguistic communities, and to provide a free and
+open framework in which fonts may be shared and improved in partnership
+with others.
+
+The OFL allows the licensed fonts to be used, studied, modified and
+redistributed freely as long as they are not sold by themselves. The
+fonts, including any derivative works, can be bundled, embedded, 
+redistributed and/or sold with any software provided that any reserved
+names are not used by derivative works. The fonts and derivatives,
+however, cannot be released under any other type of license. The
+requirement for fonts to remain under this license does not apply
+to any document created using the fonts or their derivatives.
+
+DEFINITIONS
+&quot;Font Software&quot; refers to the set of files released by the Copyright
+Holder(s) under this license and clearly marked as such. This may
+include source files, build scripts and documentation.
+
+&quot;Reserved Font Name&quot; refers to any names specified as such after the
+copyright statement(s).
+
+&quot;Original Version&quot; refers to the collection of Font Software components as
+distributed by the Copyright Holder(s).
+
+&quot;Modified Version&quot; refers to any derivative made by adding to, deleting,
+or substituting -- in part or in whole -- any of the components of the
+Original Version, by changing formats or by porting the Font Software to a
+new environment.
+
+&quot;Author&quot; refers to any designer, engineer, programmer, technical
+writer or other person who contributed to the Font Software.
+
+PERMISSION &amp; CONDITIONS
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of the Font Software, to use, study, copy, merge, embed, modify,
+redistribute, and sell modified and unmodified copies of the Font
+Software, subject to the following conditions:
+
+1) Neither the Font Software nor any of its individual components,
+in Original or Modified Versions, may be sold by itself.
+
+2) Original or Modified Versions of the Font Software may be bundled,
+redistributed and/or sold with any software, provided that each copy
+contains the above copyright notice and this license. These can be
+included either as stand-alone text files, human-readable headers or
+in the appropriate machine-readable metadata fields within text or
+binary files as long as those fields can be easily viewed by the user.
+
+3) No Modified Version of the Font Software may use the Reserved Font
+Name(s) unless explicit written permission is granted by the corresponding
+Copyright Holder. This restriction only applies to the primary font name as
+presented to the users.
+
+4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font
+Software shall not be used to promote, endorse or advertise any
+Modified Version, except to acknowledge the contribution(s) of the
+Copyright Holder(s) and the Author(s) or with their explicit written
+permission.
+
+5) The Font Software, modified or unmodified, in part or in whole,
+must be distributed entirely under this license, and must not be
+distributed under any other license. The requirement for fonts to
+remain under this license does not apply to any document created
+using the Font Software.
+
+TERMINATION
+This license becomes null and void if any of the above conditions are
+not met.
+
+DISCLAIMER
+THE FONT SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT
+OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE
+COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
+DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
+OTHER DEALINGS IN THE FONT SOFTWARE.
+</pre>
+      </div>
+    </details>
+    <details class="license-detail">
+      <summary>University of Illinois/NCSA Open Source License — Emscripten runtime<span class="expand">+</span></summary>
+      <div class="detail-body">
+        <p class="detail-note">Emscripten makes its compiler/runtime available under MIT and University of Illinois/NCSA terms. The MIT notice is also included in the MIT section above.</p>
+        <pre class="license-text">University of Illinois/NCSA Open Source License
+
+Copyright (c) 2010-2014 Emscripten authors. All rights reserved.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the &quot;Software&quot;), to deal with
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to do
+so, subject to the following conditions:
+
+* Redistributions of source code must retain the above copyright notice, this
+  list of conditions and the following disclaimers.
+* Redistributions in binary form must reproduce the above copyright notice,
+  this list of conditions and the following disclaimers in the documentation
+  and/or other materials provided with the distribution.
+* Neither the names of the Emscripten authors nor the names of its contributors
+  may be used to endorse or promote products derived from this Software without
+  specific prior written permission.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+CONTRIBUTORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS WITH
+THE SOFTWARE.
+</pre>
+      </div>
+    </details>
+  </section>
+
+  <section class="section">
+    <div class="eyebrow">07 / THANK YOU</div>
+    <h2>Built on shared work.</h2>
+    <p class="section-intro">We are grateful to the developers, maintainers, researchers, audio engineers, visual artists and preset creators who make their work available to the wider community. MICROWAVE//SAMPLER would not be the same without their contributions.</p>
+  </section>
+</div>
+</main>
+<footer><div class="wrap footer">MICROWAVE//SAMPLER · <a href="index.html">RETURN TO WEBSITE ↑</a></div></footer>
+<script>
+(function(){
+  const input=document.getElementById('presetSearch');
+  const rows=Array.from(document.querySelectorAll('#presetTable tbody tr'));
+  const count=document.getElementById('presetCount');
+  function filter(){
+    const q=input.value.trim().toLowerCase();
+    let shown=0;
+    rows.forEach(row=>{
+      const match=row.textContent.toLowerCase().includes(q);
+      row.hidden=!match;
+      if(match) shown++;
+    });
+    count.textContent='Showing '+shown+' of '+rows.length+' selected presets.';
+  }
+  input.addEventListener('input',filter);
+})();
+</script>
+</body>
+</html>
